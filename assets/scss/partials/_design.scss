@@ -1,0 +1,307 @@
+////////////////////
+//
+// Trailer
+//
+////////////////////
+.trailer {
+	background: url(#{$img-assetpath}trailer-rain-0.png) no-repeat 30% 0px;
+}
+////////////////////
+//
+// Header
+//
+////////////////////
+.logo {
+	@include row;
+	font-family:$secondary-font;
+	font-size:em(65);
+	color:$beige;
+	text-transform:lowercase;
+	.char1, .char2, .char6, .char14 {
+		padding-right:em(2);
+	}
+	.char3, .char4, .char5, .char7, .char13, .char17 {
+		padding-right:em(1);
+	}
+	.char8, .char9, .char10, .char11, .char12, .char14 {
+		padding-right:em(0.5);
+	}
+}
+.description {
+	padding-left:em(125);
+	padding-top:em(10);
+	font-size:em(15);
+	color:$rust;
+	text-transform:lowercase;
+}
+////////////////////
+//
+// Navigation
+//
+////////////////////
+.menu {
+	padding-top:em(25);
+	list-style:none;
+	li {
+		float:left;
+		a {
+			font-size:em(11);
+			letter-spacing:em(4);
+			text-transform:uppercase;
+			text-decoration:none;
+			padding-right:em(24);
+			display:block;
+			color:$beige;
+		}
+	}
+}
+
+// .menu-container { background:url(#{$img-assetpath}banner.jpg) no-repeat 0px -1000px; }
+.logo-small {
+	font-family:$secondary-font;
+	color:$beige;
+	text-align:center;
+	.char1 {
+		padding-right:em(2);
+		text-transform:lowercase;
+	}
+	.char2 {
+		padding-right:em(2);
+	}
+}
+////////////////////
+//
+// Home
+//
+////////////////////
+.home { background:url(#{$img-assetpath}banner.jpg) no-repeat 0px 0px; background-color:$beige; }
+////////////////////
+//
+// Section Shared
+//
+////////////////////
+%header-padding { padding-top:em(150); }
+.medium-circle {
+	float:left;
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	@include border-top-radius(60px);
+	@include border-bottom-radius(60px);
+	@include border-left-radius(60px);
+	@include border-right-radius(60px);
+}
+.small-circle {
+	float:left;
+	width:75px;
+	height:75px;
+	overflow:hidden;
+	@include border-top-radius(60px);
+	@include border-bottom-radius(60px);
+	@include border-left-radius(60px);
+	@include border-right-radius(60px);
+}
+.center {
+	position:relative;
+	@include span-columns(10 of 12);
+	@include shift(1);
+}
+.divide { width:225px; height:22px; margin-top:em(25); margin-bottom:em(25); background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -309px -249px; }
+////////////////////
+//
+// Synopsis
+//
+////////////////////
+.synopsis { background-color:$beige; }
+.synopsis-header, .synopsis-p { @include span-columns(5); @include shift(3); }
+.synopsis-header { @extend %header-padding; }
+.synopsis-p { padding-top:em(75); padding-bottom:em(75); }
+////////////////////
+//
+// Credit
+//
+////////////////////
+.credits { background-color:$rust; }
+.credits-header, .credits-list { @include span-columns(6); @include shift(3); }
+.credits-header { @extend %header-padding; }
+.credits-list { padding-top:em(50); padding-bottom:em(75); }
+.people {
+	li { padding-bottom:em(5); }
+	h3 { padding-top:em(25); padding-bottom:em(5); }
+}
+////////////////////
+//
+// Scenes
+//
+////////////////////
+.scene-header { background-color:$secondary; color:$beige; padding:8px 10px 12px 10px;
+	a, p { font-size:em(13); color:$beige; -webkit-font-smoothing: antialiased; }
+	p { padding-top:em(20); }
+	a { padding-right:em(20); }
+}
+.scene-toggle { text-align:right; }
+// Scenes Navigation
+.scenes { background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -160px -285px; background-color:$blue; }
+.scenes-header { margin-top:15px; margin-left:65px;}
+.scene-description { font-size:em(13); padding-top:20px; padding-left:110px; }
+.scene-description-small { font-size:em(13); padding-top:5px; padding-left:85px; }
+.scene-timecode { color:$rust; }
+.scene-title { color:$beige; }
+.scene-item-1 { margin-top:102px; margin-left:90px; }
+.scene-item-2 { margin-top:80px; margin-left:110px; }
+////////////////////
+//
+// Guide
+//
+////////////////////
+.guide-introduction {  }
+.guide-timecode { margin-top:em(20); font-size:em(13); }
+.guide-header { margin-top:em(15); width:200px; line-height:em(18); }
+////////////////////
+//
+// Rain
+//
+////////////////////
+.rain-container { position:relative; @include span-columns(12); }
+.rain-absolute { position:absolute; z-index:1000; }
+.rain-1 {
+	@extend .rain-absolute;
+	@include shift(2);
+	top:em(250);
+	width:35px;
+	height:150px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -134px -10px;
+}
+.rain-2 {
+	@extend .rain-absolute;
+	@include shift(4);
+	top:em(100);
+	width:42px;
+	height:125px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -341px -95px;
+}
+.rain-3 {
+	@extend .rain-absolute;
+	@include shift(5);
+	top:em(0);
+	width:75px;
+	height:182px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -18px -122px;
+}
+.rain-4 {
+	@extend .rain-absolute;
+	@include shift(9);
+	top:em(150);
+	width:105px;
+	height:207px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -195px -10px;
+}
+// Need to add this one in.
+.rain-5 {
+	@extend .rain-absolute;
+	@include shift(9);
+	top:em(150);
+	width:105px;
+	height:207px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -195px -10px;
+}
+.rain-6 {
+	@extend .rain-absolute;
+	@include shift(7);
+	top:em(600);
+	width:121px;
+	height:38px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -347px -27px;
+}
+.rain-7 {
+	@extend .rain-absolute;
+	@include shift(2);
+	left:30px;
+	top:em(825);
+	width:70px;
+	height:215px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -18px -9px;
+}
+.rain-8 {
+	@extend .rain-absolute;
+	@include shift(5);
+	top:em(925);
+	width:125px;
+	height:36px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -347px -27px;
+}
+.rain-9 {
+	@extend .rain-absolute;
+	@include shift(2);
+	top:em(1300);
+	width:75px;
+	height:305px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -18px -9px;
+}
+.rain-10 {
+	@extend .rain-absolute;
+	@include shift(10);
+	top:em(1500);
+	width:105px;
+	height:207px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -195px -10px;
+}
+.rain-11 {
+	@extend .rain-absolute;
+	@include shift(4);
+	top:em(1420);
+	width:121px;
+	height:38px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -347px -27px;
+}
+.rain-12 {
+	@extend .rain-absolute;
+	@include shift(8);
+	top:em(2000);
+	width:75px;
+	height:305px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -18px -9px;
+}
+.rain-13 {
+	@extend .rain-absolute;
+	@include shift(2);
+	top:em(2500);
+	width:35px;
+	height:150px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -134px -10px;
+}
+.rain-14 {
+	@extend .rain-absolute;
+	@include shift(9);
+	top:em(2800);
+	width:121px;
+	height:38px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -347px -27px;
+}
+.rain-15 {
+	@extend .rain-absolute;
+	@include shift(8);
+	top:em(3200);
+	width:105px;
+	height:207px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -195px -10px;
+}
+.rain-16 {
+	@extend .rain-absolute;
+	left:45px;
+	top:em(3600);
+	width:35px;
+	height:150px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -134px -10px;
+}
+.rain-17 {
+	@extend .rain-absolute;
+	@include shift(7);
+	top:em(3700);
+	width:75px;
+	height:305px;
+	background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -18px -9px;
+}
+
+
+

@@ -1,0 +1,35 @@
+////////////////////
+//////////////////
+//
+// Redside
+// Website
+// v 1
+//
+// TABLE OF CONTENTS
+//
+//   1. Settings - SASS Settings
+//   2. Normalize, Reset - Make the browser behave
+//   3. Bourbon - Yeah! bourbon.io
+//   4. Helpers - Useful bits of code to make my life easier
+//   5. Base - Single element selectors
+//
+//////////////////
+////////////////////
+// Resets
+@import 'helpers/normalize';
+@import 'helpers/reset';
+// Bourbon
+@import 'bourbon';
+// Settings
+@import 'settings/settings';
+// Bourbon Neat Grid
+@import 'neat';
+// Helpers
+@import 'helpers/helpers';
+@import 'helpers/animate';
+// Base Styles
+@import 'partials/base';
+@import 'partials/design';
+@import 'partials/typography';
+ @import 'partials/animations';
+// @import 'partials/navigation';

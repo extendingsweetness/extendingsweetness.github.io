@@ -1,0 +1,180 @@
+////////////////////
+//
+// General
+//
+////////////////////
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+.menu-hide {
+    position: absolute !important;
+    top: -2000px !important;
+    left: 60px !important;
+}
+
+.menu-show {
+    position: absolute !important;
+    top: 0px !important;
+    left: 60px !important;
+    @include animation-duration (1.5s);
+}
+
+.menu {
+	position: absolute;
+	width: 543px;
+	height: 408px;
+	background: url(#{$img-assetpath}/nav-bg.png) no-repeat;
+	opacity: 0.9;
+	z-index: $z-menu;
+}
+
+.menu ul {
+	margin-top: 80px;
+	color: #9bb5b3;
+	font: bold 12px/20px sans-serif;
+	text-transform: uppercase;
+}
+
+.menu ul li {
+	margin-left: 320px;
+	margin-bottom: 20px;
+}
+
+.menu ul li:nth-child(1) {
+	padding-left: 40px;
+}
+
+.menu ul li:nth-child(2) {
+	padding-left: 60px;
+}
+
+.menu ul li:nth-child(3) {
+	padding-left: 40px;
+}
+
+.menu ul li:nth-child(4) {
+	padding-left: 60px;
+}
+
+.menu ul li:nth-child(5) {
+	padding-left: 80px;
+}
+
+.menu ul li:nth-child(6) {
+	padding-left: 40px;
+}
+
+.menu ul li:nth-child(7) {
+	padding-left: 70px;
+}
+
+.close-menu {
+	color: white;
+	position: absolute;
+	top: 20px;
+	left: 440px;
+}
+
+.spiral {
+	position: absolute;
+	top: 25px;
+	width: 400px;
+	height: 400px;
+	background: url(#{$img-assetpath}/spiral-red.png) no-repeat center;
+	@include transform (scale(0.75));
+	z-index: $z-logo;
+}
+
+.logo {
+	position: fixed;
+	top: 180px;
+	left: 180px;
+	z-index: $z-logo;
+}
+
+.menu-icon {
+	position: fixed;
+	top: 250px;
+	left: 188px;
+	z-index: $z-logo
+}
+
+a.menu-icon {
+	position: absolute;
+	display: block;
+	background: yellow url(#{$img-assetpath}/menu-icon.gif) no-repeat;
+	width: 30px;
+	height: 20px;
+	z-index: $z-menu-link;
+}
+
+.redside {
+	position: absolute;
+	top: 260px;
+	left: 134px;
+	color: white;
+	font: bold 18px/12px sans-serif;
+	letter-spacing: 10px;
+	opacity: 0;
+	z-index: $z-logo;
+}
+
+.menu ul.nav li a {
+	position: relative;
+	z-index: $z-menu-link;
+}
+
+.fadeIn {
+	opacity: 1;
+	@include transition (opacity 1.5s ease-in-out);
+}
+
+.fadeOut {
+	opacity: 0;
+	@include transition (opacity 0.5s ease-in-out);
+}
+////////////////////
+//
+// ANIMATIONS
+//
+////////////////////
+@include keyframes (rotateSpiral) {
+	from {
+		@include transform (rotate(0deg) scale(.75));
+	}
+
+	to {
+		@include transform (rotate(185deg) scale(1) translate(-5px, -10px));
+	}	
+}
+
+@include keyframes (rotateSpiral-rev) {
+	from {
+		@include transform (rotate(185deg) scale(1) translate(-5px, -10px));
+	}
+
+	to {
+		@include transform (rotate(0deg) scale(.75));
+	}	
+}
+
+.rotateSpiral{
+	@include animation-name (rotateSpiral);
+	@include animation-duration (0.5s);
+	@include animation-timing-function (ease);
+	@include animation-fill-mode (forwards);
+	visibility: visible !important;						
+}
+
+.rotateSpiral-rev{
+	@include animation-name (rotateSpiral-rev);
+	@include animation-duration (0.75s);
+	@include animation-timing-function (ease);
+	@include animation-fill-mode (forwards);	
+	visibility: visible !important;						
+}

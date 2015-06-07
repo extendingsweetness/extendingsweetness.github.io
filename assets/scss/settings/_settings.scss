@@ -1,0 +1,79 @@
+////////////////////
+//////////////////
+//
+// Extending Sweetness
+// Website
+// v 1
+//
+// SETTINGS
+//
+// - Asset Paths
+// - Colors
+// - Typography
+//
+//////////////////
+////////////////////
+// Asset Paths
+$img-assetpath: 	"/assets/img/";
+$font-assetpath:	"/assets/fonts/";
+////////////////////
+//
+// Wireframe
+//
+////////////////////
+$wireframe:			1px solid black;
+// Default Width
+$default-width:		960px;
+////////////////////
+//
+// Colors
+//
+////////////////////
+$primary:			rgb(49,30,196); // Blue
+$secondary:			rgb(0,0,0);  // Black
+$tertiary:			rgb(177,109,83); // Rust
+
+$blue:				rgb(20,54,203);
+$cobalt:			rgb(20,52,196);
+$rust:				rgb(177,109,83);
+$beige:				rgb(234,226,216);
+$earth:				rgb(175,123,98);
+// Typography
+$base-font-size:	em(15);
+$base-line-height:	em(25);
+
+$primary-font: 		"merriam", courier, san-serif;
+$secondary-font: 	"amatic", courier, san-serif;
+////////////////////
+//
+// Grid
+//
+////////////////////
+$grid-columns: 12 !default; // Total number of columns in the grid
+$max-width: 100% !default; // Max-width of the outer container
+$border-box-sizing: true !default; // Makes all elements have a border-box layout
+$default-feature: min-width; // Default @media feature for the breakpoint() mixin
+$default-layout-direction: LTR !default;
+// Visual Grid
+$visual-grid: false !default; // Display the base grid
+$visual-grid-color: #aaa !default;
+$visual-grid-index: front !default; // Show grid behind content (back) or overlay it over the content (front)
+$visual-grid-opacity: 0.4 !default;
+$visual-grid-breakpoints: () !default;
+////////////////////
+//
+// Breakpoints
+//
+////////////////////
+$screen: 			new-breakpoint(max-width 1440px 12);
+$tablet: 			new-breakpoint(min-width 960px 12);
+$mobile: 			new-breakpoint(min-width 480px 4);
+////////////////////
+//
+// Z-Index
+//
+////////////////////
+$z-header:			900;
+$z-trailer:			1000;
+
+

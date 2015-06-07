@@ -1,0 +1,68 @@
+////////////////////
+//////////////////
+//
+// Underscore
+// Website
+// v 1.0
+//
+// TYPOGRAPHY
+//
+// - Fonts
+// - Colors
+// - Typography
+//
+//////////////////
+////////////////////
+@include font-face(amatic, '#{$font-assetpath}amaticsc-bold-webfont', 800);
+@include font-face(amatic, '#{$font-assetpath}amaticsc-regular-webfont');
+@include font-face(merriam, '#{$font-assetpath}ywft-merriam-webfont');
+////////////////////
+//
+// General
+//
+////////////////////
+p {
+	color:$secondary;
+	line-height:em(25);
+	padding-bottom:em(16);
+	-webkit-font-smoothing: antialiased;
+}
+em { font-weight:800; }
+i { font-style:italic; }
+////////////////////
+//
+// Headers
+//
+////////////////////
+h1 { font-family:$primary-font; font-size:38px; color:$secondary; -webkit-font-smoothing: antialiased; }
+h2 { @extend h1; font-size:34px; font-weight:100; }
+h3 { @extend h1; font-size:30px; }
+h4 { @extend h1; font-size:26px; }
+h5 { @extend h1; font-size:20px; font-weight:800; text-transform:uppercase; letter-spacing:2px; }
+h6 { @extend h1; font-size:16px; font-weight:800; text-transform:uppercase; letter-spacing:2px; }
+
+.h1 { font-family:$primary-font; font-size:38px; color:$secondary; -webkit-font-smoothing: antialiased; }
+.h2 { @extend h1; font-size:34px; font-weight:100; }
+.h3 { @extend h1; font-size:11px; text-transform:uppercase; letter-spacing:em(5); }
+.h4 { @extend h1; font-size:25px; letter-spacing:em(3); }
+.h5 { @extend h1; font-size:20px; }
+.h6 { @extend h1; font-size:16px; }
+////////////////////
+//
+// Links
+//
+////////////////////
+a { color:$secondary;
+	&:visited { color:$rust; };
+	&:active { color:$rust; };
+	&:hover { color:$rust; };
+}
+////////////////////
+//
+// Colors
+//
+////////////////////
+.rust { color:$rust; }
+.beige { color:$beige; }
+
+
