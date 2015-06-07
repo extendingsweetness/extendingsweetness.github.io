@@ -1,0 +1,17 @@
+////////////////////
+//
+// Grid
+//
+////////////////////
+$grid-columns: 12 !default; // Total number of columns in the grid
+$max-width: 100% !default; // Max-width of the outer container
+$gutter:em(0); // Set the gutter
+$border-box-sizing: true !default; // Makes all elements have a border-box layout
+$default-feature: min-width; // Default @media feature for the breakpoint() mixin
+$default-layout-direction: LTR !default;
+// Visual Grid
+$visual-grid: false !default; // Display the base grid
+$visual-grid-color: #aaa !default;
+$visual-grid-index: front !default; // Show grid behind content (back) or overlay it over the content (front)
+$visual-grid-opacity: 0.4 !default;
+$visual-grid-breakpoints: () !default;

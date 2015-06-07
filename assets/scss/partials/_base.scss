@@ -7,161 +7,310 @@ html, body { width:100%; height:100%; }
 body {
 	font-size:$base-font-size;
 	font-family:$primary-font;
-	color:$secondary;
+	color:$primary;
 	background-color:$tertiary;
 }
 ////////////////////
 //
-// Modules
+// Trailer
 //
 ////////////////////
-// .home, .header, .introduction, .menu, .synopsis, .credits, .scenes, .guide, .footer { @include wireframes(); }
-
-.home { position:relative; height:100%; @include span-columns(12);
-	.header { position:absolute; bottom:em(250); @include span-columns(10); @include shift(1); }
-	.introduction { @include span-columns(5 of 10); }
-	.menu { @include span-columns(5 of 10); }
-	@include media($screen) {
-	    @include span-columns(12);
-		height:20px;
-	}
-	@include media($tablet) {
-	    @include span-columns(12);
-		height:50px;
-	}
+.trailer {
+	z-index:$z-trailer;
+	position:fixed;
+	display:none;
+	top:70px;
+	width:100%;
+	height:700px;
+	background: url(#{$img-assetpath}trailer-rain-0.png) no-repeat 30% 0px;
+}
+.trailer-center {
+	width:50%;
+	margin:0 auto;
 	@include media($mobile) {
-	    @include span-columns(4);
-		height:100px;
+		width: 100%;
 	}
 }
-.container { @include span-columns(12);
-	@include media($screen) {
-	    @include span-columns(12);
-		height:20px;
-	}
-	@include media($tablet) {
-	    @include span-columns(12);
-		height:50px;
-	}
+// Make Vimeo Responsive
+.trailer-wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+// Make Vimeo Responsive
+.trailer-wrapper iframe,  
+.trailer-wrapper object,  
+.trailer-wrapper embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+// Make Vimeo Responsive with Fixed Size
+.trailer-content {
+	width: 600px;
+	max-width: 100%;
 	@include media($mobile) {
-	    @include span-columns(4);
-		height:100px;
+		width: 100%;
 	}
+}
+.trailer-close {
+	@include span-columns(1 of 12);
+	@include shift(5);
+	@include media($mobile) {
+		@include span-columns(6);
+		@include shift(3);
+	}	
+}
+////////////////////
+//
+// Home
+//
+////////////////////
+.home { 
+	position:relative;
+	@include span-columns(12);
+	margin-top:70px;
+	height:580px;
+	background:url(#{$img-assetpath}banner.jpg) no-repeat 0px 0px; 
+	background-size:cover;
+	@include media($mobile) {
+		height:500px;
+	}
+	.header { 
+		position:absolute;
+		top:350px;
+		@include span-columns(6);
+		@include shift(1); 
+		@include media($mobile) {
+			@include span-columns(5);
+			@include shift(1);
+			top:200px;
+		}
+	}
+	.description {
+		position:absolute;
+		z-index:$z-level-1;
+		left:14px;
+		top:0px;
+		width:350px;
+		font-size:em(15);
+		text-transform:lowercase;
+		color:$aqua;
+		@include transform(rotate(90deg));
+		-webkit-font-smoothing: antialiased;
+		-webkit-transform-origin: 50%  51%; // Fixes the blur when rotating type
+		@include media($mobile) {
+			@include transform(rotate(0deg));
+			top:200px;
+			width:190px;
+		}
+	}
+}
+.logo {
+	position:relative;
+	top:75px;
+	font-family:$secondary-font;
+	text-transform:lowercase;
+	color:$beige;
+	// Global Definition
+	.char1, .char2, .char3, .char4, .char5, .char6, .char7, .char8, .char9, .char11, .char12, .char13, .char14, .char15, .char16, .char17, .char18, .char19 {
+		position:absolute;
+	}
+	// Sizes
+	.char1, .char2, .char3, .char4, .char5, .char6, .char7, .char8, .char9 {
+		font-size:45px;
+	}
+	.char11, .char12, .char13, .char14, .char15, .char16, .char17, .char18, .char19 {
+		font-size:52px;
+	}
+	// Extending
+	.char1 { top:1px; }
+	.char2 { top:1px; left:20px; }
+	.char3 { top:2px; left:35px; }
+	.char4 { top:3px; left:55px; }
+	.char5 { top:3px; left:70px; }
+	.char6 { top:2px; left:90px; }
+	.char7 { top:4px; left:105px; }
+	.char8 { top:4px; left:120px; }
+	.char9 { top:4px; left:145px; }
+	//Sweetness
+	.char11 { left:180px; }
+	.char12 { top:2px; left:200px; }
+	.char13 { top:2px; left:225px; }
+	.char14 { top:2px; left:240px; }
+	.char15 { top:2px; left:250px; }
+	.char16 { top:2px; left:265px; }
+	.char17 { top:1px; left:295px; }
+	.char18 { left:315px; }
+	.char19 { left:335px; }
+	@include media($mobile) {
+		//Sweetness
+		.char11 { top:50px; left:45px; }
+		.char12 { top:52px; left:60px; }
+		.char13 { top:52px; left:80px; }
+		.char14 { top:52px; left:95px; }
+		.char15 { top:52px; left:105px; }
+		.char16 { top:52px; left:123px; }
+		.char17 { top:51px; left:150px; }
+		.char18 { top:50px; left:165px; }
+		.char19 { top:50px; left:180px; }
+	}
+}
+////////////////////
+//
+// Columns
+//
+////////////////////
+.outer-container { @include outer-container; }
+.left-column { @include span-columns(7); @include omega();
+	@include media($mobile) {
+		 @include span-columns(6);
+	}
+}
+.right-column { @include span-columns(5); @include omega();
+	@include media($mobile) {
+		 @include span-columns(6);
+	}
+}
+////////////////////
+//
+// Synopsis
+//
+////////////////////
+.synopsis {
+	@include span-columns(7 of 7);
+	background-color:$rust;
+	h3 { color:$earth; }
+}
+.synopsis-header, .synopsis-p {
+	@include span-columns(5 of 7);
+	@include shift(1);
+	color:$earth;
+	@include media($mobile) {
+		 @include span-columns(4); @include shift(1);
+	}
+}
+.synopsis-header { margin-top:$margin-small; @extend %headers; }
+.synopsis-p {
+	margin-top:$margin-medium;
+	font-size:$font-medium;
+}
+////////////////////
+//
+// Credits
+//
+////////////////////
+.credits {
+	@include span-columns(7 of 7);
+	position:relative;
+	background-color:$beige;
+}
+.credits-header, .credits-list { @include span-columns(5 of 7); @include shift(1);
+	@include media($mobile) {
+		 @include span-columns(4); @include shift(1);
+	}
+}
+.credits-header { margin-top:$margin-small; @extend %headers; }
+.credits-list { padding-top:$margin-small; padding-bottom:$margin-medium; }
+.people {
+	li { padding-bottom:em(5); }
+	h3 { padding-top:em(25); padding-bottom:em(5); }
+}
+////////////////////
+//
+// Updates
+//
+////////////////////
+.news {
+	@include span-columns(5 of 5);
+	padding-bottom:$margin-small;
+	background-color:$earth;
+	.news-items { margin-top:50px; }
+	.news-item { margin-bottom:10px; }
+}
+.news-header, .news-items {
+	@include span-columns(3 of 5);
+	margin-left:$margin-small;
+	color:$rust;
+	@include media($mobile) {
+		 @include span-columns(4); @include shift(1);
+	}
+}
+.news-item h2 { padding-bottom:10px; }
+.news-header { margin-top:$margin-small; @extend %headers; }
+////////////////////
+//
+// Footer
+//
+////////////////////
+.footer {
+	@extend .synopsis;
+	margin-top:0px;
+	padding:100px;
+	background-color:$blue;
 }
 ////////////////////
 //
 // Guide
 //
 ////////////////////
-.guide { position:relative; height:1000px; }
-.guide-container {
-	position:absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	width:auto;
-	height:auto;
-	z-index:2;
-	overflow:auto;
-	-webkit-overflow-scrolling:touch;
-	-webkit-transform:translate3d(0, 0, 0);
-	-moz-transform:translate3d(0, 0, 0);
-	-ms-transform:translate3d(0, 0, 0);
-	-o-transform:translate3d(0, 0, 0);
-	transform:translate3d(0, 0, 0);
-	background-color:$beige;
+.guide {
+	@include span-columns(5 of 5);
+	background-color:$green;
+	padding-bottom:$margin-small;
 }
+.guide-header {
+	@extend %headers;
+	margin-left:$margin-small;
+	margin-top:$margin-small;
+}
+.guide-introduction {
+	@include span-columns(5 of 5);
+	padding:$margin-small; 
+}
+.scene {
+	@include span-columns(5 of 5);
+}
+.scene-link h5  { color:$beige; &:hover { color:$earth; } }
+.scene-link .guide-thumbnail { color:$beige; &:hover { opacity:1; } }
+.scene-description { @include span-columns(2 of 5); padding-left:10px; }
+.scene-timecode-title { color:$beige; &:hover { color:$earth; } font-size:$font-small; text-transform:uppercase; }
+.scene-timecode { color:$beige; &:hover { color:$earth; } font-size:$font-medium; }
+.scene-title { margin-top:10px; }
+.guide-thumbnail { 
+	@include span-columns(3 of 5);
+	opacity:0.2;
+	&:hover { opacity:1; }
+}
+.guide-detail {
+	display:none;
+	position:fixed;
+	z-index:$z-guide;
+	top:70px;
+	bottom:0px;
+	height:100%;
+	color:$earth;
+	background-color:$secondary;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	padding-bottom:100px;
+}
+.guide-content { padding-bottom:$margin-small; }
+.guide-content, .scene-header { margin:$margin-small;}
+.guide-content p, .scene-header p {
+	color:$earth;
+	a { color:$rust; }
+ }
 .guide-left-column { @include span-columns(7);
 	.guide-image { @include span-columns(7 of 7); }
 	.guide-content { @include span-columns(6 of 7); @include shift(1); }
 }
 .guide-right-column { @include span-columns(5); }
-.scene-header { @include span-columns(12);
-	
+.scene-header { 
+	@include span-columns(12);
 }
-.scene-pagination { @include span-columns(6); }
-.scene-toggle { @include span-columns(6); @include omega(); }
-.guide-introduction { @include span-columns(12); }
-.scene-navigation {
-  position:absolute;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  width:auto;
-  height:auto;
-}
-.scenes {
-  position:absolute;
-  top:0;
-  right:auto;
-  bottom:0;
-  left:auto;
-  width:324px;
-  height:auto;
-  overflow:auto;
-  -webkit-overflow-scrolling: touch;
-  -webkit-transition: width 0.3s ease;
-     -moz-transition: width 0.3s ease;
-      -ms-transition: width 0.3s ease;
-       -o-transition: width 0.3s ease;
-          transition: width 0.3s ease;
-}
-.scenes-right {
-  right:0;
-  z-index:1;
-}
-.scene-thumbnail { width:200px; }
-
-
-//.synopsis, .credits, .scenes, .guide, .footer { @include span-columns(12); background-color:$rust;
-//	@include media($screen) {
-//	    @include span-columns(12);
-//		height:20px;
-//	}
-//	@include media($tablet) {
-//	    @include span-columns(12);
-//		height:50px;
-//	}
-//	@include media($mobile) {
-//	    @include span-columns(4);
-//		height:100px;
-//	}
-//}
-
-
-
-
-.menu-container { position:absolute; bottom:0px; @include span-columns(12); height:45px; }
-.menu { @include span-columns(6); }
-.logo-small { @include span-columns(1); }
-
-
-
-
-
-
-.trailer { z-index:$z-trailer; position:fixed; display:none; width:100%; height:700px;
-	@include media($screen) {
-	    @include span-columns(12);
-		height:20px;
-	}
-	@include media($tablet) {
-	    @include span-columns(12);
-		height:50px;
-	}
-	@include media($mobile) {
-	    @include span-columns(4);
-		height:100px;
-	}
-}
-.trailer-content {
-	@include span-columns(6 of 12);
-	@include shift(3);
-}
-.trailer-close {
-	@include span-columns(1 of 12);
-	@include shift(5);
-	
-}
+.prev-scene, .next-scene { color:$rust;}

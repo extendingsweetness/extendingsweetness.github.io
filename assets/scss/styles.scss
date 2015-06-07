@@ -1,9 +1,9 @@
 ////////////////////
 //////////////////
 //
-// Redside
+// Extending Sweetness
 // Website
-// v 1
+// v 2.0
 //
 // TABLE OF CONTENTS
 //
@@ -22,14 +22,18 @@
 @import 'bourbon';
 // Settings
 @import 'settings/settings';
+@import 'settings/gridsettings';
 // Bourbon Neat Grid
 @import 'neat';
+// Bourbon Neat Grid Settings
+@import 'settings/querysettings';
 // Helpers
 @import 'helpers/helpers';
 @import 'helpers/animate';
+// Otherwise Header
+@import 'otherwise/otherwise';
 // Base Styles
 @import 'partials/base';
-@import 'partials/design';
 @import 'partials/typography';
- @import 'partials/animations';
-// @import 'partials/navigation';
+@import 'partials/embellishments';
+@import 'partials/animations';

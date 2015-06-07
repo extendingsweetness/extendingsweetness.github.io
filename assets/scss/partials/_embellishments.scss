@@ -1,0 +1,242 @@
+////////////////////
+//
+// Embellishments
+//
+////////////////////
+%embellishments {
+	position:absolute;
+	background:url(#{$img-assetpath}#{$image-embellishments}) no-repeat;
+}
+.divide { width:225px; height:22px; margin-top:em(25); margin-bottom:em(25); background:url(#{$img-assetpath}pattern_sprite.png) no-repeat -309px -249px; }
+////////////////////////////
+// Waves
+////////////////////////////
+%waves {
+	z-index:$z-level-1;
+	background-position:-866px -621px;
+	width:126px;
+	height:40px;
+}
+////////////////////////////
+// Cloud Group 3
+////////////////////////////
+%cloud-group-3 {
+	@extend %embellishments;
+	width:382px;
+	height:60px;
+	background-position:-448px -608px;
+}
+////////////////////////////
+// Rain Group 1
+////////////////////////////
+%rain-group-1 {
+	z-index:$z-level-3;
+	width:90px;
+	height:245px;
+	background:url(#{$img-assetpath}#{$image-raindrops}) no-repeat 0px 0px;
+}
+////////////////////////////
+// Rain Group 2
+////////////////////////////
+%rain-group-2 {
+	z-index:$z-level-4;
+	width:177px;
+	height:549px;
+	background-position:0px -833px;
+}
+////////////////////////////
+// Rain Group 3
+////////////////////////////
+%rain-group-3 {
+	z-index:$z-level-3;
+	width:70px;
+	height:222px;
+	background-position:-250px -918px;
+}
+////////////////////////////
+// Rain Group 4
+////////////////////////////
+%rain-group-4 {
+	z-index:$z-level-4;
+	width:185px;
+	height:255px;
+	background-position:-335px -922px;
+}
+////////////////////////////
+// Rain Group 5
+////////////////////////////
+%rain-group-5 {
+	z-index:$z-level-4;
+	width:40px;
+	height:160px;
+	background-position:-761px -939px;
+}
+////////////////////////////
+// Rain Group 6
+////////////////////////////
+%rain-group-6 {
+	@extend %embellishments;
+	z-index:$z-level-4;
+	width:96px;
+	height:214px;
+	background-position:-890px -910px;
+}
+////////////////////////////
+// Rain Group 7
+////////////////////////////
+%rain-group-7 {
+	z-index:$z-level-4;
+	width:40px;
+	height:155px;
+	background-position:-117px -1283px;
+}
+////////////////////////////////////////
+// Embellishments - Home
+////////////////////////////////////////
+.cloud-home {
+	@extend %embellishments;
+	left:90px;
+	width:360px;
+	height:80px;
+	background-position:-615px -300px;
+	@include media($mobile) {
+		left:0px;
+	}
+}
+.smoke {
+	@extend %embellishments;
+	z-index:$z-level-3;
+	top:75px;
+	left:420px;
+	width:416px;
+	height:505px;
+	background-position:0px -225px;
+	@include media($mobile) {
+		right:0px;
+		left:inherit;
+		width:125px;
+		background-position:0px -225px;
+	}
+}
+.rain-home-1 {
+	@extend %embellishments;
+	z-index:$z-level-4;
+	top:145px;
+	left:315px;
+	width:39px;
+	height:154px;
+	background-position:-764px -939px;
+	@include media($mobile) {
+		display:none;
+	}
+}
+.rain-home-2 {
+	@extend %embellishments;
+	z-index:$z-level-4;
+	top:0px;
+	right:225px;
+	width:208px;
+	height:255px;
+	background-position:-14px -975px;
+	@include media($mobile) {
+		display:none;
+	}
+	@include media($break-display) {
+		right:425px;
+	}
+}
+////////////////////////////////////////
+// Embellishments - News
+////////////////////////////////////////
+.rain-news {
+	@extend %embellishments;
+	@extend %rain-group-1;
+	@include span-columns(2);
+	@include shift(7);
+	top:590px;
+	@include media($mobile) {
+		@include shift(0);
+		top:635px;
+		left:-10px;
+		width:120px;
+		background-position:-380px -922px;
+	}
+	@include media($break-display) {
+		@include span-columns(2);
+		@include shift(7);
+	}	
+}
+////////////////////////////////////////
+// Embellishments - Synopsis
+////////////////////////////////////////
+.branch {
+	@extend %embellishments;
+	z-index:$z-level-3;
+	top:525px;
+	left:-60px;
+	width:180px;
+	height:350px;
+	background-position:-600px -1245px;
+	@include media($mobile) {
+		top:460px;
+		background-position:-650px -1245px;
+	}
+}
+.rain-synopsis {
+	@extend %embellishments;
+	z-index:$z-level-4;
+	top:625px;
+	left:25px;
+	width:50px;
+	height:175px;
+	background-position:-15px -960px;
+	@include media($mobile) {
+		display:none;
+	}
+}
+.cloud-synopsis {
+	@include span-columns(7 of 7);
+	height:60px;
+	background:url(#{$img-assetpath}#{$image-cloud}) no-repeat -140px 0px;
+}
+////////////////////////////////////////
+// Embellishments - Credits
+////////////////////////////////////////
+.cloud-credits {
+	@extend .cloud-synopsis;
+	height:150px;
+	background:url(#{$img-assetpath}#{$image-cloud}) no-repeat -140px -60px;
+}
+// Waves
+.waves-credits {
+	@extend %embellishments;
+	@extend %waves;
+	top:82px;
+	left:245px;
+}
+.rain-credits-left {
+	@extend %embellishments;
+	@extend %rain-group-5;
+	top:137px;
+	left:-10px;
+}
+.rain-credits-right {
+	position:absolute;
+	z-index:$z-level-3;
+	width:130px;
+	height:215px;
+	top:475px;
+	right:0px;
+	background:url(#{$img-assetpath}#{$image-rain-swoosh}) no-repeat;
+}
+.branch-credits {
+	@include span-columns(7 of 7);
+	height:130px;
+	background:url(#{$img-assetpath}#{$image-branch}) no-repeat 0px 0px;
+}
+////////////////////////////////////////
+// Rain Pattern
+////////////////////////////////////////
+html, body, .rain-pattern { @include span-columns(7 of 7); height:100%; background-color:$darkblue; }
+.rain-blue { min-height:100%; }
+

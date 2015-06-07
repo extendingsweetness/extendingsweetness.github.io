@@ -1,0 +1,115 @@
+////////////////////
+//
+// OTHERWISE
+// Navigation
+// v 1.1
+//
+////////////////////
+// z-index
+$z-otherwise:		4000;
+// IMG Variable
+$otherwise-sprite:	"otherwise_navigation.png";
+// Height
+$otherwise-height:	em(72);
+// Colors
+$otherwise-dark:	rgb(96,91,82);
+$otherwise-light:	rgb(180,180,173);
+// Font Sizes
+$otherwise-large:	12px;
+$otherwise-small:	11px;
+////////////////////
+.otherwise_hide { height:70px; }
+.otherwise_container {
+	@include outer-container;
+	-webkit-font-smoothing: antialiased;
+}
+.otherwise_nav {
+	position:fixed;
+	z-index:$z-otherwise;
+	top:0px;
+	@include span-columns(12);
+	font-family:$primary-font;
+	background-color:$earth;
+	box-shadow: 3px 3px 20px 0px rgba(0, 0, 0, 0.5);
+	@include media($mobile) {
+		padding-bottom:25px;
+		overflow:hidden;
+	}
+}
+.otherwise_toggle {
+	display:block;
+	cursor:pointer;
+	height:$otherwise-height;
+	background: url(#{$img-assetpath}#{$otherwise-sprite}) no-repeat -90px 25px;
+	text-indent:-9999px;
+	display:none; // Hide from Desktop view
+	@include media($mobile) {
+		@include span-columns(1); // Show on mobile
+	}
+}
+.otherwise_active { background: url(#{$img-assetpath}#{$otherwise-sprite}) no-repeat 17px 25px; }
+.otherwise_film_title {
+	@include span-columns(1);
+	padding-top:22px;
+	padding-left:25px;
+	font-family:$secondary-font;
+	font-size:em(30);
+	text-transform:uppercase;
+	letter-spacing:em(3);
+	color:$otherwise-light;
+	@include media($mobile) {
+		@include span-columns(5);
+		@include omega;
+	}
+}
+.otherwise-menu {
+	margin-top:25px;
+	margin-left:25px;
+	@include span-columns(6);
+	@include media($mobile) {
+		margin-top:45px;
+		margin-left:0px;
+		@include span-columns(4);
+	}
+	.otherwise_links {
+		@include span-columns(6 of 6);
+		padding-top:5px;
+		list-style:none;
+		@include media($mobile) {
+			padding-top:25px;
+		}
+		li {
+			float:left;
+			@include media($mobile) {
+				float:none;
+			}
+			a {
+				font-size:$otherwise-small;
+				letter-spacing:em(4);
+				text-transform:uppercase;
+				text-decoration:none;
+				padding-right:em(24);
+				display:block;
+				height:15px;
+				color:$otherwise-light;
+				@include media($mobile) {
+					padding-right:0;
+					padding-bottom:30px;
+				}
+			}
+		}
+	}
+}
+.otherwise_o {
+	width:70px;
+	float:right;
+	height:$otherwise-height;
+	text-indent:-9999px;
+	height:70px;
+	background: url(#{$img-assetpath}#{$otherwise-sprite}) no-repeat -208px 3px;
+	@include media($mobile) {
+		@include span-columns(2);
+		@include shift(1);
+		margin-top:20px;
+	}
+}

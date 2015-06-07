@@ -1,10 +1,80 @@
+////////////////////
+//
+// Trailer
+//
+////////////////////
+.trailer {
+	background: url(#{$img-assetpath}trailer-rain-0.png) no-repeat 30% 0px;
+}
+////////////////////
+//
+// Header
+//
+////////////////////
+.logo {
+	@include row;
+	font-family:$secondary-font;
+	font-size:em(65);
+	color:$beige;
+	text-transform:lowercase;
+	.char1, .char2, .char6, .char14 {
+		padding-right:em(2);
+	}
+	.char3, .char4, .char5, .char7, .char13, .char17 {
+		padding-right:em(1);
+	}
+	.char8, .char9, .char10, .char11, .char12, .char14 {
+		padding-right:em(0.5);
+	}
+}
+.description {
+	padding-left:em(125);
+	padding-top:em(10);
+	font-size:em(15);
+	color:$rust;
+	text-transform:lowercase;
+}
+////////////////////
+//
+// Navigation
+//
+////////////////////
+.menu {
+	padding-top:em(25);
+	list-style:none;
+	li {
+		float:left;
+		a {
+			font-size:em(11);
+			letter-spacing:em(4);
+			text-transform:uppercase;
+			text-decoration:none;
+			padding-right:em(24);
+			display:block;
+			color:$beige;
+		}
+	}
+}
 
+// .menu-container { background:url(#{$img-assetpath}banner.jpg) no-repeat 0px -1000px; }
+.logo-small {
+	font-family:$secondary-font;
+	color:$beige;
+	text-align:center;
+	.char1 {
+		padding-right:em(2);
+		text-transform:lowercase;
+	}
+	.char2 {
+		padding-right:em(2);
+	}
+}
 ////////////////////
 //
 // Home
 //
 ////////////////////
-
+.home { background:url(#{$img-assetpath}banner.jpg) no-repeat 0px 0px; background-color:$beige; }
 ////////////////////
 //
 // Section Shared
@@ -42,13 +112,23 @@
 // Synopsis
 //
 ////////////////////
-
+.synopsis { background-color:$beige; }
+.synopsis-header, .synopsis-p { @include span-columns(5); @include shift(3); }
+.synopsis-header { @extend %header-padding; }
+.synopsis-p { padding-top:em(75); padding-bottom:em(75); }
 ////////////////////
 //
 // Credit
 //
 ////////////////////
-
+.credits { background-color:$rust; }
+.credits-header, .credits-list { @include span-columns(6); @include shift(3); }
+.credits-header { @extend %header-padding; }
+.credits-list { padding-top:em(50); padding-bottom:em(75); }
+.people {
+	li { padding-bottom:em(5); }
+	h3 { padding-top:em(25); padding-bottom:em(5); }
+}
 ////////////////////
 //
 // Scenes
