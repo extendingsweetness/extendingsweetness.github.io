@@ -1,0 +1,12 @@
+---
+layout: post
+title: "The Mermaid Spirit"
+date: 2016-12-9 20:52:55 -0800
+timecode: 2:16:06
+categories: mermaid spirit ancestral
+---
+In Zimbabwe’s indigenous spiritual cosmology there are ancestral spirits and other kinds of spirits. Among them, is the aqueous being that is called njuzu (Gelfand 1980; Chavunduka 1981; Jacobsen-Widding 2000).  In the lore the njuzu is a mermaid that “takes” the artistic or the ill underwater and teaches them herbal medicine and how to create. Before teaching she tests her acolytes - to ensure they have good hearts, manners, and ethics. In the ancient past, however, the njuzu taught differently. Most likely the njuzu was a way of looking and perceiving - as a hybrid of an actual human rainmaker (nyusi) and a non-human who dwelled together in a cave. Caves painted with snake fat and bentonite-red ochre powder throughout Southern Africa depict human figures in mergence with crocodiles, fish and snakes. Oral traditions then confirm that panspecies learning was consecrated in ancient rituals particularly those whereby rainmakers performed altered states as theriomorphic perception (Ranger 1999; Garlake 1960). In more recent times, cave images of mudzimuzangara - ancestral spirit creatures - are repainted before ritual to capture their presence during rainmaking ceremonies.
+
+The njuzu, while called to rainmaking ceremonies today then, may not always or be consistently called to aid in rainmaking in spite of their association with water. Indeed, in general conversation among the Christian or modern-educated sets of Zimbabwe, the njuzu is considered a mere myth. Yet, even newspapers must take the myth seriously when they are cited as the cause for discontinuing the building of dams. Such occasions, bearing deep precedence in the colonial liberation stories of the Nyami Nyami a giant serpent (not unlike the Loch Ness Monster in Scotland) at Victoria Falls, reveal that the myth carries a physical force or resistance that extends beyond mere belief or metaphor.
+
+While no “no evidence of aqueous humanoids exist” declared disturbed oceanographer-members of the US National Oceanographic and Atmospheric Association (NOAA) in 2012 after a Discovery Channel/Animal Planet ’spoof’ aired on television under the pretense that paleoarcheological evidence had been found, the mermaids tale is still one of critical to the ecological heritage and future of life on the planet (see the essay “Where T/here Be Mermaids.PDF).
