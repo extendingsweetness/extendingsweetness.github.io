@@ -121,6 +121,19 @@ layout: default
 <div id="guide-introduction" class="guide-introduction">
 	<p>This section is for helping you dive deeper into the film and learn more about rainmaking in Zimbabwe.</p>
 </div>
+{% for post in site.posts reversed %}
+	<div class="scene">
+		<a href="#section-1" id="scene-toggle" class="scene-link">
+	    	<div class="guide-thumbnail"><img src="assets/img/guide/{{ post.thumbnail }}" alt="{{ post.title }}"></div>
+			<div class="scene-description">
+				<div class="scene-timecode">
+					<span class="scene-timecode-title">timecode</span><br>
+					{{ post.timecode }}</div>
+				<h5 class="scene-title">{{ post.title }}</h5>
+			</div>
+		</a>
+	</div>
+{% endfor %}
 <div class="scene">
 	<a href="#section-1" id="scene-toggle" class="scene-link">
     	<div class="guide-thumbnail"><img src="assets/img/guide/01_Seeds_t.jpg" alt="Seeds of Spirit Calling"></div>

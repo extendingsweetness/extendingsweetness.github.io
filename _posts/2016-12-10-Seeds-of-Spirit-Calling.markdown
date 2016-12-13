@@ -2,6 +2,7 @@
 layout: post
 title: "Seeds of Spirit Calling"
 date: 2016-12-10 20:52:55 -0800
+thumbnail: 01_Seeds_t.jpg
 timecode: 2:01:05
 categories: germinated clay beer
 ---
