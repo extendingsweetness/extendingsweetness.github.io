@@ -5,12 +5,10 @@ $(document).ready(function () {
 	$('body').on('click', '#guide-close', function(e) {
 		e.preventDefault();
 		$('#guide-detail').hide();
-		$('#guide-detail').addClass('animated fadeOut');
 	});
 	$('body').on('click', '#scene-toggle', function(e) {
 		e.preventDefault();
 		$('#guide-detail').show();
-		$('#guide-detail').addClass('animated fadeIn');
 	});
 	// Trailer
 	$('body').on('click', '#trailer-show', function(e) {
