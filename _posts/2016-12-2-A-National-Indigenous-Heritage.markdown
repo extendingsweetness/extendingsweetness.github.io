@@ -2,7 +2,9 @@
 layout: post
 title: "A National and Indigenous Heritage: For Re-Enactment"
 date: 2016-12-2 20:52:55 -0800
-timecode: 11:49:00
+photo: "10_Heritage.jpg"
+thumbnail: "10_Heritage_t.jpg"
+timecode: "11:49:00"
 categories: indigenous heritage
 ---
 The film Extending Sweetness is shot outside of the National Domboshawa Rainmaking Cave - a site overseen by the National Museums and Monuments of Zimbabwe (NMMZ) and located 30 kilometers north of the capital of Harare.

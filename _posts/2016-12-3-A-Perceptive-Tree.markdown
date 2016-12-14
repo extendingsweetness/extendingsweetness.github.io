@@ -2,7 +2,9 @@
 layout: post
 title: "A Perceptive Tree"
 date: 2016-12-3 20:52:55 -0800
-timecode: 10:19:21
+photo: "08_Fruit.jpg"
+thumbnail: "08_Fruit_t.jpg"
+timecode: "10:19:21"
 categories: tree perceptive shona
 ---
 In Extending Sweetness, a tree is taken as a bellwether of how much rain has fallen. This tree is called in Shona mawhute and its’ purple and white fruits whutes. The tree allows percipient action for rainmaking based on two tests: a) the amount of fruits still hanging: if there are plenty the rain has not been sufficient to cause them to drop and b) a stick of the plant delivers an image of the amount of groundwater by the length and darkness of its shadow cast on the ground.

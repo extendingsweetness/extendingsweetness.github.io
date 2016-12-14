@@ -2,7 +2,9 @@
 layout: post
 title: "The Mermaid Spirit"
 date: 2016-12-9 20:52:55 -0800
-timecode: 2:16:06
+photo: "02_Mermaid.jpg"
+thumbnail: "02_Mermaid_t.jpg"
+timecode: "2:16:06"
 categories: mermaid spirit ancestral
 ---
 In Zimbabwe’s indigenous spiritual cosmology there are ancestral spirits and other kinds of spirits. Among them, is the aqueous being that is called njuzu (Gelfand 1980; Chavunduka 1981; Jacobsen-Widding 2000).  In the lore the njuzu is a mermaid that “takes” the artistic or the ill underwater and teaches them herbal medicine and how to create. Before teaching she tests her acolytes - to ensure they have good hearts, manners, and ethics. In the ancient past, however, the njuzu taught differently. Most likely the njuzu was a way of looking and perceiving - as a hybrid of an actual human rainmaker (nyusi) and a non-human who dwelled together in a cave. Caves painted with snake fat and bentonite-red ochre powder throughout Southern Africa depict human figures in mergence with crocodiles, fish and snakes. Oral traditions then confirm that panspecies learning was consecrated in ancient rituals particularly those whereby rainmakers performed altered states as theriomorphic perception (Ranger 1999; Garlake 1960). In more recent times, cave images of mudzimuzangara - ancestral spirit creatures - are repainted before ritual to capture their presence during rainmaking ceremonies.

@@ -2,7 +2,9 @@
 layout: post
 title: "Market Medicine"
 date: 2016-12-5 20:52:55 -0800
-timecode: 7:23:19
+photo: "06_Market.jpg"
+thumbnail: "06_Market_t.jpg"
+timecode: "7:23:19"
 categories: marketplace medicine shona
 ---
 Prior ethnographic research with spirit-mediums, healers, healer assistants, and plant merchants in Zimbabwe has shown the need to recognize the indigenous intellectual rights of most Zimbabwean healing practitioners. While in Zimbabwe there is the Zimbabwe Association of Traditional Healers (ZINATHA) there is also the problem of the public perception of how accessible should be customary healing plants in modern markets (see below). Often, what is known about healing plants is decontextualized from an actual healing practice. Extending Sweetness includes this researched example here to draw a parallel with the character’s concerns for weather, water and ecological health. Meteorological reports predict weather patterns but are hardly derived from the actual engagement with weather patterns i.e. in rainmaking, or water-restoration.

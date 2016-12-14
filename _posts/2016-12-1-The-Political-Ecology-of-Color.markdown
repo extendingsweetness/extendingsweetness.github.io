@@ -2,7 +2,9 @@
 layout: post
 title: "The Political Ecology of Color"
 date: 2016-12-1 20:52:55 -0800
-timecode: 12:14:03
+photo: "09_Political.jpg"
+thumbnail: "09_Political_t.jpg"
+timecode: "12:14:03"
 categories: color sacred perception
 ---
 Color, writes Michael Taussig in What Color is The Sacred? is fluid and moving. It is creaturely he argues if we restore its’ ontological being with temperature: _“to equate calor (heat) with color detaches us from a visual a approach to vision an makes color the cutting edge of such a shift.”_ In an indigenous Zimbabwean theory of difference, the constitution of being - or temperament - derives from temperature. This can be discerned from the perception of color. Shona classify and represent things - which are different by their temperature or temperament - in static color states.
