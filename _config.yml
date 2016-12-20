@@ -1,34 +1,65 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# SITE SETTINGS
+title:                Extending Sweetness oOo˚o˚ a docu-drama of rainmaking
+subtitle:             Art Director and Designer
+email:                chloe@otherwise.cm
+author:               Otherwise
+description:          Benjamin Kinzer - Creative Director and Designer who loves great ideas and making them real.
+baseurl:              "" # subpath if necessary, e.g. /blog/
+url:                  "http://extendingsweetness.org" # base url http://url.com
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Extending Sweetness oOo˚o˚ a docu-drama of rainmaking
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# COLLECTIONS
+collections:
+- news
 
-# Build settings
-markdown: kramdown
-theme: minima
+# BUILD
+include:              ["_prototypes"]
+
+# GOOGLE ANALYTICS
+google_analytics:     UA-857352-1
+
+# BUILD SETTINGS
+markdown:             kramdown
+permalink:            pretty
+paginate:
+sass:
+  sass_dir:           /assets/_sass/
+  compressed:         true
+
+# PERMALINKS
+permalink:            /:categories/:year/:title
+
+# FEATURE SETS
+show_related_posts:   false
+
+# Disqus post comments
+# (leave blank to disable Disqus)
+disqus_shortname:
+
+# SOCIAL
+show_social:          false
+github_username:
+twitter_username:
+linkedin_username:
+flattr_button:
+
+# Post sharing icons
+show_sharing:         false
+share_text:           'Share this post!'
+# Change to 'true' to enable individual icons
+share_facebook:       false
+share_twitter:        false
+share_googleplus:     false
+share_linkedin:       false
+share_digg:           false
+share_tumblr:         false
+share_reddit:         false
+share_stumbleupon:    false
+share_hackernews:     false
+
+# GEMS
 gems:
   - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
